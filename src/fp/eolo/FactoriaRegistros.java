@@ -19,9 +19,9 @@ public class FactoriaRegistros {
 		LocalDate fecha = LocalDate.parse(trozos[0].trim());
 		String ciudad = trozos[1].trim();
 		Double direccion = Double.parseDouble(trozos[2].trim());
-		Double velocidadMedia= Double.parseDouble(trozos[3].trim());
+		Double velocidad= Double.parseDouble(trozos[3].trim());
 		Double velocidadMaxima= Double.parseDouble(trozos[4].trim());
-		return new Registro(fecha,ciudad,direccion,velocidadMedia,velocidadMaxima);
+		return new Registro(fecha,ciudad,direccion,velocidad,velocidadMaxima);
 	}
 	
 	private static List<Registro> leerRegistros(String fichero){

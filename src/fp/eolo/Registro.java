@@ -2,7 +2,7 @@ package fp.eolo;
 
 import java.time.LocalDate;
 
-public class Registro {
+public class Registro implements Comparable<Registro>{
 	private LocalDate fecha;
 	private String ciudad;
 	private Double direccion;
